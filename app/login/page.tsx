@@ -1,6 +1,6 @@
 import { SignIn } from "@clerk/nextjs";
 import Link from "next/link";
-import { Zap, ArrowLeft } from "lucide-react";
+import { Zap, ArrowLeft, Lock } from "lucide-react";
 
 export default function LoginPage() {
   return (
@@ -44,6 +44,15 @@ export default function LoginPage() {
             },
           }}
         />
+
+        {/* Terms notice */}
+        <p className="text-xs text-gray-400 text-center mt-4">
+          계속 진행하면{" "}
+          <Link href="/terms" className="underline hover:text-gray-600">이용약관</Link>
+          {" "}및{" "}
+          <Link href="/privacy" className="underline hover:text-gray-600">개인정보처리방침</Link>
+          에 동의하는 것으로 간주됩니다.
+        </p>
       </div>
     </div>
   );

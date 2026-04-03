@@ -49,14 +49,14 @@ export default function Footer() {
             <h4 className="text-sm font-semibold text-white mb-4">지원</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <Link href="/terms" className="hover:text-white transition-colors">
                   이용약관
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <Link href="/privacy" className="hover:text-white transition-colors">
                   개인정보처리방침
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="mailto:hello@autopost.kr" className="hover:text-white transition-colors">
