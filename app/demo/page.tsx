@@ -514,7 +514,7 @@ function SignupCta() {
       </p>
       <Link href="/login"
         className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-blue-600 font-bold rounded-xl hover:bg-blue-50 transition-colors text-sm">
-        14일 무료 체험 시작 <ArrowRight className="w-4 h-4" />
+        지금 시작하기 <ArrowRight className="w-4 h-4" />
       </Link>
       <p className="text-blue-300 text-xs mt-3">
         <Lock className="w-3 h-3 inline mr-1" />신용카드 불필요 · 언제든 취소 가능
