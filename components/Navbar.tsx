@@ -74,7 +74,7 @@ export default function Navbar() {
               href="/login"
               className="btn-primary text-sm"
             >
-              무료로 시작하기
+              지금 시작하기
             </Link>
           </div>
 
@@ -134,7 +134,7 @@ export default function Navbar() {
                 href="/login"
                 className="block w-full text-center py-2.5 text-sm font-medium text-white bg-blue-600 rounded-xl hover:bg-blue-700"
               >
-                무료로 시작하기
+                지금 시작하기
               </Link>
             </div>
           </div>

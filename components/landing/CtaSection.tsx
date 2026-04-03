@@ -34,7 +34,7 @@ export default function CtaSection() {
                 href="/login"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-blue-600 font-bold rounded-xl hover:bg-blue-50 transition-all duration-200 shadow-lg group"
               >
-                무료로 시작하기
+                지금 시작하기
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
