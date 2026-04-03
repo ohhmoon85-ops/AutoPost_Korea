@@ -15,8 +15,7 @@ import {
   LogOut,
   Bell,
 } from "lucide-react";
-import { createClient } from "@/lib/supabase/client";
-import { useRouter } from "next/navigation";
+import { useClerk } from "@clerk/nextjs";
 
 const navItems = [
   { href: "/dashboard", icon: LayoutDashboard, label: "대시보드" },
@@ -29,15 +28,9 @@ const navItems = [
 export default function DashboardHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
-  const router = useRouter();
-  const supabase = createClient();
+  const { signOut } = useClerk();
 
   const currentPage = navItems.find((item) => item.href === pathname);
-
-  const handleLogout = async () => {
-    await supabase.auth.signOut();
-    router.push("/");
-  };
 
   return (
     <>
@@ -91,7 +84,6 @@ export default function DashboardHeader() {
             onClick={() => setMobileOpen(false)}
           />
           <aside className="absolute left-0 top-0 bottom-0 w-72 bg-white shadow-xl flex flex-col">
-            {/* Header */}
             <div className="p-5 border-b border-gray-100 flex items-center justify-between">
               <Link href="/" className="flex items-center gap-2">
                 <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
@@ -109,7 +101,6 @@ export default function DashboardHeader() {
               </button>
             </div>
 
-            {/* Nav */}
             <nav className="flex-1 p-4 space-y-1 overflow-y-auto">
               {navItems.map((item) => {
                 const Icon = item.icon;
@@ -132,10 +123,9 @@ export default function DashboardHeader() {
               })}
             </nav>
 
-            {/* Logout */}
             <div className="p-4 border-t border-gray-100">
               <button
-                onClick={handleLogout}
+                onClick={() => signOut({ redirectUrl: "/" })}
                 className="flex items-center gap-3 w-full px-4 py-3 rounded-xl text-sm font-medium text-gray-600 hover:bg-red-50 hover:text-red-600 transition-all"
               >
                 <LogOut className="w-5 h-5" />
