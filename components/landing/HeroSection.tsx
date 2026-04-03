@@ -36,7 +36,7 @@ export default function HeroSection() {
 
             {/* Subheadline */}
             <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
-              업종과 키워드만 입력하면 Claude AI가{" "}
+              업종과 키워드만 입력하면 AI가{" "}
               <strong className="text-gray-900">채널별 맞춤 게시물</strong>을
               자동으로 생성하고 예약 발행합니다. 마케터 없이도 지속적인 SNS
               운영이 가능합니다.
@@ -57,10 +57,10 @@ export default function HeroSection() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link
-                href="/login"
+                href="/demo"
                 className="btn-primary text-base px-8 py-4 rounded-xl shadow-lg shadow-blue-200 hover:shadow-blue-300 group"
               >
-                14일 무료 체험 시작
+                무료 데모 체험하기
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
@@ -75,11 +75,11 @@ export default function HeroSection() {
             <div className="flex flex-wrap items-center gap-4 mt-8 justify-center lg:justify-start">
               <div className="flex items-center gap-1.5 text-sm text-gray-500">
                 <CheckCircle className="w-4 h-4 text-green-500" />
-                신용카드 불필요
+                로그인 없이 데모 체험
               </div>
               <div className="flex items-center gap-1.5 text-sm text-gray-500">
                 <CheckCircle className="w-4 h-4 text-green-500" />
-                14일 무료 체험
+                신용카드 불필요
               </div>
               <div className="flex items-center gap-1.5 text-sm text-gray-500">
                 <CheckCircle className="w-4 h-4 text-green-500" />

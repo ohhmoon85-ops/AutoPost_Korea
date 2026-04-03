@@ -14,7 +14,7 @@ export default function CtaSection() {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-white/90 text-sm font-medium mb-6">
               <Sparkles className="w-4 h-4" />
-              지금 시작하면 14일 무료
+              지금 바로 시작하세요
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
@@ -24,7 +24,7 @@ export default function CtaSection() {
             </h2>
 
             <p className="text-blue-200 text-lg mb-8 max-w-lg mx-auto">
-              신용카드 없이 14일 무료 체험. 언제든 취소 가능합니다.
+              데모에서 직접 체험하고 시작하세요. 언제든 취소 가능합니다.
               <br />
               지금 시작해서 첫 게시물을 3분 안에 완성해보세요.
             </p>

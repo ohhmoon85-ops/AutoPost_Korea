@@ -14,7 +14,7 @@ export default function PricingSection() {
         <div className="text-center mb-12">
           <h2 className="section-heading">합리적인 요금제</h2>
           <p className="section-subheading">
-            규모에 맞는 플랜을 선택하세요. 14일 무료 체험 후 결정하셔도 됩니다.
+            규모에 맞는 플랜을 선택하세요. 데모 체험 후 결정하셔도 됩니다.
           </p>
 
           {/* Annual toggle */}

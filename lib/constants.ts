@@ -141,7 +141,7 @@ export const PRICING_PLANS = [
       "팀 계정 최대 3명",
     ],
     highlighted: true,
-    cta: "14일 무료 체험",
+    cta: "지금 시작하기",
   },
   {
     name: "에이전시",
