@@ -54,6 +54,12 @@ export default function Navbar() {
             >
               요금제
             </Link>
+            <Link
+              href="/demo"
+              className="text-sm font-semibold text-blue-600 hover:text-blue-700 transition-colors flex items-center gap-1"
+            >
+              ✨ 데모 체험
+            </Link>
           </div>
 
           {/* Desktop CTA */}
@@ -109,6 +115,13 @@ export default function Navbar() {
               className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-lg"
             >
               요금제
+            </Link>
+            <Link
+              href="/demo"
+              onClick={() => setIsOpen(false)}
+              className="block px-4 py-2 text-sm font-semibold text-blue-600 hover:bg-blue-50 rounded-lg"
+            >
+              ✨ 데모 체험
             </Link>
             <div className="pt-3 px-4 space-y-2">
               <Link
