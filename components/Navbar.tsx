@@ -66,12 +66,6 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-3">
             <Link
               href="/login"
-              className="text-sm font-medium text-gray-600 hover:text-gray-900 px-4 py-2 rounded-lg hover:bg-gray-100 transition-all"
-            >
-              로그인
-            </Link>
-            <Link
-              href="/login"
               className="btn-primary text-sm"
             >
               지금 시작하기
@@ -123,13 +117,7 @@ export default function Navbar() {
             >
               ✨ 데모 체험
             </Link>
-            <div className="pt-3 px-4 space-y-2">
-              <Link
-                href="/login"
-                className="block w-full text-center py-2.5 text-sm font-medium text-gray-700 border border-gray-200 rounded-xl hover:bg-gray-50"
-              >
-                로그인
-              </Link>
+            <div className="pt-3 px-4">
               <Link
                 href="/login"
                 className="block w-full text-center py-2.5 text-sm font-medium text-white bg-blue-600 rounded-xl hover:bg-blue-700"
